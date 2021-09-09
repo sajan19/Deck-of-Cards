@@ -13,6 +13,12 @@ class Cards {
         this.packOfCards = new ArrayList<>(capacity);
         this.rank =rank;
     }
+
+    //Method to Generate Randomm Number
+    void randomNumberGeneration(){
+        double rank = Math.floor(Math.random()*10)%52;
+        System.out.println("rank: "+ rank);
+    }
     //Method to check numbers
     void checkCard(int rank){
         if(rank < 52){
@@ -39,9 +45,8 @@ public class DeckOfCard {
         //Create an Object
         Cards dCards = new Cards(52);
         //Calling an ArrayList
+        dCards.randomNumberGeneration();
         
-
-
     }
 }
 
